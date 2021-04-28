@@ -1,0 +1,679 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3" xml:lang="vi" lang="vi" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Welcome Schedule A Return Book</title>
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="publisher" content="[UPLEAT] UI Dev Team" />
+    <meta name="author" content="Yong Hyun Sik" />
+    <link rel="shortcut icon" href="/images/Favicon.ico" />
+    <link rel="stylesheet" href="css/common.css?version=20190522" />
+    <link rel="stylesheet" href="css/pages.css?version=20190610" />
+    <link rel="stylesheet" href="css/slick.css?version=20190522" />
+    <link rel="stylesheet" href="css/jquery-ui.min.css?version=20190522" />
+    <link rel="stylesheet" href="css/dev.css?version=20190522" />
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="css/ie8.css?version=20190125" />
+    <![endif]-->
+</head>
+<body>
+
+    <div>
+        <!-- Skip -->
+        <div class="skip">
+        </div>
+        <!-- //Skip -->
+        <!-- Header -->
+        <div class="header">
+            <div class="header__info">
+                <div class="header__aligner">
+                    <div class="header__site">
+                        <h1 class="page">
+                            <a href="/" class="page__names">
+                                <span class="page__name">
+                                    <span class="page__logo_vn -china"></span>
+
+                                </span>
+                                <span class="page__name">
+                                    <span>Schedule A Return Book</span>
+                                </span>
+                            </a>
+
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__nav">
+                <!-- GNB -->
+                <div id="gnb" class="gnb">
+                    <div class="gnb__aligner">
+                        <ul class="gnb__folders">
+                            <li class="gnb__folder">
+                                <a href="/info/center" class="gnb__folder-name">Trang chủ</a>
+                                <ul class="gnb__list">
+                                    <li class="gnb__item"><a href="http://due.udn.vn/vi-vn/phong/thuvien/thuviends/cid/2159" class="gnb__link">Giới thiệu</a></li>
+                                    <li class="gnb__item"><a href="http://due.udn.vn/phong/thuvien" class="gnb__link">Thời gian làm việc</a></li>
+                                    <li class="gnb__item"><a href="http://due.udn.vn/vi-vn/phong/thuvien/thuviengioithieu/cid/2745" class="gnb__link">Hướng dẫn tra cứu tài liệu trực tuyến trên website thư viện</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnb__folder">
+                                <a href="/visacenter/booking/insert" class="gnb__folder-name">Lịch đặt của sinh viên</a>
+                                <ul class="gnb__list">
+                                    <li class="gnb__item"><a href="file:///E:/QT%20D%E1%BB%B0%20%C3%81N/[44K212.04]%20FRONT%20END/DANH%20S%C3%81CH%20L%E1%BB%8ACH%20%C4%90%E1%BA%B6T%20TT.html" class="gnb__link">Danh sách lịch đặt</a></li>
+                                    <li class="gnb__item"><a href="file:///E:/QT%20D%E1%BB%B0%20%C3%81N/[44K212.04]%20FRONT%20END/DANH%20S%C3%81CH%20L%E1%BB%8ACH%20%C4%90%E1%BA%B6T%20CHI%20TI%E1%BA%BET%20TT.html" class="gnb__link">Danh sách lịch đặt chi tiết</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnb__folder">
+                                <a href="/customercenter/notice/list" class="gnb__folder-name">Tài khoản</a>
+                                <ul class="gnb__list">
+                                    <li class="gnb__item"><a href="file:///E:/QT%20D%E1%BB%B0%20%C3%81N/[44K212.04]%20FRONT%20END/LOGIN.html" class="gnb__link">Đăng nhập</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- //GNB -->
+            </div>
+        </div>
+        <!-- //Header -->
+        <!-- Contents -->
+        <div id="contents" class="main">
+            <div class="banners">
+
+
+                <div class="banners__list">
+                    <div>
+
+
+
+
+                        <div id="banner1;jsessionid=BBC03E7AB499A4A7758A80A4C9EA27E2" class="banners__item   -active" style="background-image: url(upload/11.jpg)">
+
+                        </div>
+                    </div>
+                    <div>
+
+
+
+
+                        <div id="banner2;jsessionid=BBC03E7AB499A4A7758A80A4C9EA27E2" class="banners__item " style="background-image: url(upload/12.jpg)">
+
+                            <div class="banners__text">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+
+                    </div>
+                    <div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="information">
+                <div class="information__aligner">
+                    <!-- h2 class="information__heading">
+                        <span th:text="${pageParam.center_nm}"></span>
+                        <span th:text="#{index.visa.center}">비자신청센터</span>
+                        <em class="information__emphasis" th:text="#{index.service.info}">서비스 안내</em>
+                    </h2-->
+                    <h2 class="information__heading">
+                        <span>SCHEDULE A RETURN BOOK</span>
+                        <em class="information__emphasis">Hướng dẫn dịch vụ</em>
+                    </h2>
+                    <div class="information__list">
+                        <div class="information__item">
+                            <h3 class="information__title">Thông báo</h3>
+                            <div class="information__content">
+                                <div class="notice">
+                                    <ul class="notice__list">
+
+                                        <li class="notice__item">
+                                            <a href="#" class="notice__link" onclick="javascript:jsNoticeView(&#39;464&#39;);">
+                                                <div class="notice__badge -important">Quan trọng</div>
+
+
+                                                <div class="notice__subject">
+
+
+
+                                                    <span>Lưu ý khi đăng ký lịch</span>
+
+                                                </div>
+                                                <div class="notice__date">2021.01.26</div>
+                                            </a>
+                                        </li>
+
+                                        <li class="notice__item">
+                                            <a href="#" class="notice__link" onclick="javascript:jsNoticeView(&#39;413&#39;);">
+                                                <div class="notice__badge -important">Quan trọng</div>
+
+
+                                                <div class="notice__subject">
+
+
+
+                                                    <span>Thông báo về việc trả sách</span>
+
+                                                </div>
+                                                <div class="notice__date">2020.07.01</div>
+                                            </a>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="/customercenter/notice/list" class="information__more">Xem thêm</a>
+                        </div>
+
+                        <div class="information__item">
+                            <h3 class="information__title">Lịch được đăng ký</h3>
+                            <div class="information__content">
+                                <div class="cal">
+
+                                    <div id="calendar"></div>
+
+                                    <ul class="cal__labels">
+                                        <li class="cal__label -book">Có thể đặt hẹn</li>
+                                        <li class="cal__label -done">Đã kết thúc đặt hẹn</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="/visacenter/booking/insert" class="information__more">Xem thêm</a>
+                        </div>
+
+                        <div class="information__item">
+                            <h3 class="information__title">Hướng dẫn chung</h3>
+                            <div class="information__content">
+                                <div class="guide">
+                                    <div class="guide__time">
+                                        <div class="guide__title">Thời gian làm việc</div>
+                                        <div class="guide__aligner">
+                                            <!-- div th:if="${pageParam.center_cd == 'B00007' or pageParam.center_cd == 'SGN001'}" class="guide__align">
+                                                <div class="guide__hour">
+                                                    <span class="guide__days" th:text="|#{common.column.week.mon} / #{common.column.week.wed} / #{common.column.week.fri}|">월/수/금</span> 08:30 ~ 17:30
+                                                </div>
+                                                <div class="guide__hour">
+                                                    <span class="guide__days" th:text="|#{common.column.week.tue} / #{common.column.week.thu}|">화/목</span> 08:30 ~ 19:30
+                                                </div>
+                                                <div class="guide__hour -weekend">
+                                                    <span class="guide__days" th:text="#{common.column.week.sat}">토</span> 08:30 ~ 11:30
+                                                </div>
+                                                <div class="guide__caption" th:text="#{index.holiday.desc.B00007}">대사관 휴무일 적용(베트남 공휴일 및 대한민국 국경일)</div>
+                                            </div-->
+
+
+
+                                            <div class="guide__align">
+                                                <!-- 월수금, 화목, 주말 -->
+                                                <div class="guide__hour">
+                                                    <span class="guide__days">Thứ 2 ~ Thứ 6</span> 7h30:00 ~ 20:30
+                                                </div>
+                                                <!--
+
+                                                                                                <div class="guide__hour -weekend">
+                                                                                                    <span class="guide__days" th:text="#{common.column.week.sat}">토</span> 09:00 ~ 11:30
+                                                                                                </div>
+                                                -->
+
+                                                <div class="guide__hour">
+                                                    <span class="guide__days">Thứ 7 ~ CN</span> 7h30:00 ~ 16:30
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+                                        <div class="guide__contact">
+                                            <ul class="guide__list">
+                                                <li class="guide__item"><em class="guide__icon -phone">Số điện thoại</em><span>(+84.236) 3950114</span></li>
+                                                <li class="guide__item"><em class="guide__icon -email">Email</em><span>thuvien@due.edu.vn</span></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <a href="/info/visit" class="information__more">Xem thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //Contents -->
+        </div>
+        <div>
+            <!-- Footer -->
+            <div class="footer">
+
+                <div class="snb">
+                    <ul class="snb__list">
+                        <li class="snb__item"><a href="/customercenter/notice/list" class="snb__link">Giới thiệu</a></li>
+                        <li class="snb__item"><a href="/sitemap" class="snb__link">Facebook</a></li>
+                        <li class="snb__item"><a href="/customercenter/terms/view/02" class="snb__link">Thư viện</a></li>
+                        <li class="snb__item"><a href="/customercenter/terms/view/02" class="snb__link">Tin tức</a></li>
+                    </ul>
+                </div>
+
+                <div class="site">
+                    <div class="site__info">
+                        <div class="site__images">
+
+                            <img src="images/2.png" class="site__image" />
+                        </div>
+
+                        <div class="site__text">
+                            <ul class="site__list">
+                                <li class="site__item">Liên hệ</li>
+                                <li class="site__item">
+                                    <span>Địa chỉ</span>：<span>71 Ngũ Hành Sơn, TP. Đà Nẵng</span>&nbsp;&nbsp;&nbsp;<span></span>
+                                </li>
+                                <li class="site__item">
+                                    <span>Số điện thoại</span>:<span> (+84.236) 3950114</span>&nbsp;&nbsp;&nbsp;<span></span>
+                                </li>
+                            </ul>
+
+                            <p class="site__copyright">&copy; Bản quyền Trường Đại học Kinh tế - Đại học Đà Nẵng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //Footer -->
+            <!-- 사용자 스크립트 영역이 들어감 -->
+            <form id="tourMenuForm" name="tourMenuForm">
+                <input type="hidden" name="flag" id="tm_flag" />
+                <input type="hidden" name="perPageNum" id="tm_perPageNum" value="8" />
+                <input type="hidden" name="orderby" id="tm_orderby" value="R" />
+                <input type="hidden" name="areacode" id="tm_areacode" value="1" />
+                <input type="hidden" name="contenttypeCode" id="tm_contenttypeCode" value="" />
+                <input type="hidden" name="contenttype" id="tm_contenttype" />
+            </form>
+
+            <script src="js/jquery-1.12.0.min.js"></script>
+            <script src="js/jquery-ui.min.js"></script>
+            <script src="js/slick-1.9.0.min.js"></script>
+            <script src="js/common.js"></script>
+            <script src="js/dev.js"></script>
+
+
+
+            <script src="js/jquery.validate.js"></script>
+            <script src="js/jquery.validate.min.js"></script>
+            <script src="js/additional-methods.min.js"></script>
+            <script type="text/javascript">
+
+	var temp_month = "";
+
+	var temp_day = '';
+	var temp_hour = '';
+	var temp_minute = '';
+
+	$("#calendar").datepicker({
+        dateFormat: "yy-mm-dd",
+        monthNames: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'],
+        dayNamesMin: ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'],
+        showMonthAfterYear: true,
+        constrainInput: false,
+        minDate:'+1',
+        yearSuffix: " -",
+        showMonthAfterYear: true,
+        constrainInput: false,
+        beforeShowDay: function(day) {
+	    	var di = parseInt($.datepicker.formatDate('dd', day));
+	    	 return [false, "", "calendar_day_"+di];
+	    },
+        beforeShow: function(elem, obj) {
+            if ( $('#' + obj.id).attr('date-min') ) {
+                $(this).datepicker('option', 'minDate', $('#' + obj.id).attr('date-min'));
+            } else {
+                $(this).datepicker('option', 'minDate', '+1');
+            }
+        } ,
+        onChangeMonthYear: function(year, month, widget) {
+        	var dateStr = year + "-" + (month > 10?month : "0"+month);
+        	temp_month = dateStr;
+        }
+    });
+
+	$(function() {
+
+		var d = new Date();
+		month = d.getMonth() + 1
+		year = d.getFullYear();
+		if (month < 10) month = '0' + month;
+
+		jsVisitCntJSON('month',[year, month ].join('-'));
+
+
+		$(document).on('click', '.ui-datepicker-next', function () {
+			if(temp_month != "") jsVisitCntJSON('month',temp_month);
+		});
+
+		$(document).on('click', '.ui-datepicker-prev', function () {
+			if(temp_month != "") jsVisitCntJSON('month',temp_month);
+		});
+	});
+
+	// 달력 월 /일 클릭 시
+	//  -  type = 'month'
+	//     val  = '2018-01'
+	//  -  type = 'day'
+	//     val  = '2018-01-17'
+	function jsVisitCntJSON(type, val){
+
+	    $.ajax({
+			url: "/visacenter/booking/visitCntInfo" ,
+			method:"post",
+			contentType: 'application/json',
+			dataType : 'json' ,
+			data :JSON.stringify({
+				visit_type : type,
+				visit_val : val,
+				center_cd : "B00008"
+			}),
+			success: function(list) {
+				if(list != null && list.length > 0 ){
+					  if(type == 'month'){
+						  jsMonthView(list);
+					  } else if (type == 'day'){
+						  jsDayView(list);
+						  if(val != $('#visit_sche_day').val()){
+							  temp_day = '';
+							  temp_hour = '';
+							  temp_minute = '';
+							  $('#visit_sche_day').val(val);
+							  $('#txt_visit_sche_dt').html( "Ch\u1ECDn ng\u00E0y \u0111\u0103ng k\u00FD l\u1ECBch h\u1EB9n ");
+							  $('#visit_sche_time').val("");
+						  }
+					  }
+				}else{
+					if (type == 'day') alert("Kh\u00F4ng c\u00F3 l\u1ECBch h\u1EB9n th\u00EDch h\u1EE3p.");
+				}
+			},
+			 error : function(jqXHR, textStatus, errorThrown){
+				    if (type == 'day') alert("Kh\u00F4ng c\u00F3 l\u1ECBch h\u1EB9n th\u00EDch h\u1EE3p.");
+			 }
+		});
+	}
+
+	function jsMonthView(list){
+		 //yongjun
+		 // 프로그레스 바 처리
+		 	var addClass = "";
+		 	var html = "";
+		 	for(var index in list){
+		 	 	var data = list[index];
+		 	 	// ex ) data.work_day = 2019-01-23
+		 	 	if(data.work_day.length == 10){
+		 	 		var day = parseInt(data.work_day.substring(8, 10));
+		 	 		addClass = "";
+		 	 	 	html = day;
+		 		    if(data.check){
+		 			   addClass = " -book";
+		 			   html = "<a href='#' class='ui-state-default' onclick='javascript:jsVisitCntJSON(\"day\",\""+data.work_day+"\");'>"+day+"</a>";
+		 		    }else{
+		 			  addClass = " -done";
+		 			  html = "<span class='ui-state-default'>"+day+"</span>";
+		 		    }
+		 		   $('td[title="calendar_day_'+day+'"]').addClass( addClass);
+		 		   $('td[title="calendar_day_'+day+'"]').html(html);
+				}
+		 	}
+
+	}
+
+	function popUpClose(id){
+		document.getElementById(id).style.display = "none";
+	}
+
+	function popUpCheckClose(id){
+		var  checkDay = $("#chk_Period_"+id).val();
+		var todayDate = new Date();
+		todayDate.setDate(todayDate.getDate() + checkDay);
+		document.cookie="popUp_"+id+"=" + escape("popUp_"+id) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+		document.getElementById("popUp_"+id).style.display = "none";
+
+	}
+
+	function linkView(link_type, url, link_no, newWindow){
+
+		if(link_type == '01'){
+
+			if(newWindow == "Y"){
+				var openNewWindow = window.open("about:blank");
+				openNewWindow.location.href = url;
+			}else{
+				window.location.href=url;
+			}
+
+		}else if(link_type == '02'){
+
+			if(newWindow == "Y"){
+				var openNewWindow = window.open("about:blank");
+				openNewWindow.location.href = "/customercenter/notice/view/"+link_no;
+			}else{
+				window.location.href = "/customercenter/notice/view/"+link_no;
+			}
+
+		}
+
+	}
+
+	function jsNoticeView(seq){
+		var obj = document.searchForm;
+		obj.method = "post";
+		obj.action="/customercenter/notice/view/"+seq;
+		obj.submit();
+	}
+
+            </script>
+
+
+            <script language="javascript">
+
+	function jsMove(selType, selValue){
+		var obj = document.initFrm;
+
+		if(selType == "lang"){
+			obj.lang_type.value = selValue;
+		}else{
+			obj.center_cd.value = selValue;
+		}
+
+		obj.target = "";
+		obj.method = "post";
+		obj.action = "/";
+		obj.submit();
+	}
+
+	function jsTourMenuMove(contenttype, contenttypecode){
+
+		var obj = document.tourMenuForm;
+		obj.contenttype.value = contenttype;
+		obj.contenttypeCode.value = contenttypecode;
+		obj.flag.value = "Y";
+
+		obj.target = "";
+		obj.method = "post";
+		obj.action="/tour/list/";
+		obj.submit();
+
+	}
+
+	function jsTourMenuGuide(contenttype, contenttypecode) {
+
+		var obj = document.tourMenuForm;
+		obj.contenttype.value = contenttype;
+		obj.contenttypeCode.value = contenttypecode;
+		obj.flag.value = "Y";
+
+		obj.target = "";
+		obj.method = "post";
+		obj.action="/tour/glist";
+		obj.submit();
+	}
+
+	function jsTourMenuGuideView(contenttypeid, guideCode) {
+
+		var obj = document.tourMenuForm;
+		obj.contenttype.value= contenttypeid;
+
+		if(contenttypeid == '76') obj.contenttypeCode.value= '01';
+		else if(contenttypeid == '78') obj.contenttypeCode.value= '02';
+		else if(contenttypeid == '85') obj.contenttypeCode.value= '03';
+		else if(contenttypeid == '77') obj.contenttypeCode.value= '04';
+		else if(contenttypeid == '75') obj.contenttypeCode.value= '05';
+		else if(contenttypeid == '80') obj.contenttypeCode.value= '06';
+		else if(contenttypeid == '79') obj.contenttypeCode.value= '07';
+		else if(contenttypeid == '82') obj.contenttypeCode.value= '08';
+		else if(contenttypeid == '99') obj.contenttypeCode.value= '09';
+		else obj.contenttypeCode.value= '01';
+
+
+		obj.method = "post";
+		obj.action="/tour/gview/"+guideCode;
+		obj.submit();
+	}
+
+	function jsTourMenuView(contentid, contenttypeid) {
+		var obj = document.tourMenuForm;
+		obj.contenttype.value= contenttypeid;
+		if(contenttypeid == '76') obj.contenttypeCode.value= '01';
+		else if(contenttypeid == '78') obj.contenttypeCode.value= '02';
+		else if(contenttypeid == '85') obj.contenttypeCode.value= '03';
+		else if(contenttypeid == '77') obj.contenttypeCode.value= '04';
+		else if(contenttypeid == '75') obj.contenttypeCode.value= '05';
+		else if(contenttypeid == '80') obj.contenttypeCode.value= '06';
+		else if(contenttypeid == '79') obj.contenttypeCode.value= '07';
+		else if(contenttypeid == '82') obj.contenttypeCode.value= '08';
+		else if(contenttypeid == '99') obj.contenttypeCode.value= '09';
+		else obj.contenttypeCode.value= '01';
+
+		obj.method = "post";
+		obj.action="/tour/view/"+contentid;
+		obj.submit();
+	}
+
+	var vcCookieDT = new Date();
+	vcCookieDT.setDate(vcCookieDT.getDate() + 3);
+	document.cookie="visaforkorea-vt.com_Lang=vn; path=/; expires=" + vcCookieDT.toGMTString() + ";"
+
+	function jsMoveLang(lang){
+		 var selectedOption = lang;
+	     if (selectedOption != '') {
+	     	var curr_page = window.location.href,
+	         next_page = "";
+		        if(curr_page.indexOf("?") > -1) {
+		        	var pos = curr_page.indexOf("lang=");
+		        	if(pos > -1){
+		        		next_page = curr_page.substr(0,pos) + 'lang='+selectedOption + curr_page.substr(pos+7);
+		        	}else{
+		        		next_page = curr_page+"&lang="+selectedOption;
+		        	}
+
+		        } else {
+		            next_page = curr_page+"?lang="+selectedOption;
+		        }
+
+		        if(next_page.indexOf("/tour/") > -1){
+
+		        	var obj = document.tourMenuForm;
+		        	obj.flag.value = "Y";
+
+		        	if(lang == 'ko'){
+		        		obj.contenttype.value = "";
+		        	}else{
+		        		obj.contenttype.value = "";
+		        	}
+		       		obj.target = "";
+		    		obj.method = "post";
+		    		if(next_page.indexOf("/tour/view/") > -1){
+		    			obj.action = "/tour/list/?&lang="+selectedOption;
+		    		}else{
+		    			obj.action = next_page;
+		    		}
+
+		    		obj.submit();
+		        }else{
+		        	window.location = next_page;
+		        }
+
+	     }
+	}
+
+	function jsLoading(loadingType){
+
+		if(loadingType == 'start'){
+			$("#divPopUp").show();
+			$("#divConfirm").hide();
+			$("#divAlert").hide();
+			$("#divLoading").show();
+			$("#divActionAlert").hide();
+		}else if(loadingType == 'end'){
+			jsPopUpClose();
+		}
+
+	}
+
+	function jsPopUpClose(){
+		$("#divNoticePopUp").hide();
+		$("#divPopUp").hide();
+		$("#divConfirm").hide();
+		$("#divAlert").hide();
+		$("#divLoading").hide();
+		$("#divActionAlert").hide();
+	}
+
+	function jsAlertView(msg){
+		$("#divAlertText").html(msg);
+		$("#divPopUp").show();
+		$("#divConfirm").hide();
+		$("#divAlert").show();
+		$("#divLoading").hide();
+		$("#divActionAlert").hide();
+	}
+
+	function jsConfirmView(msg){
+		$("#divConfirmText").html(msg);
+		$("#divPopUp").show();
+		$("#divConfirm").show();
+		$("#divAlert").hide();
+		$("#divLoading").hide();
+		$("#divActionAlert").hide();
+	}
+
+	function jsActionView(msg){
+		$("#divActionAlertText").html(msg);
+		$("#divPopUp").show();
+		$("#divConfirm").hide();
+		$("#divAlert").hide();
+		$("#divLoading").hide();
+		$("#divActionAlert").show();
+	}
+
+            </script>
+
+
+
+
+
+            <div>
+                <!-- Global site tag (gtag.js) - Google Analytics -->
+                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-74046348-4"></script>
+                <script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-74046348-4', {'linker': {'domains': ['www.visaforkorea-vt.com', 'www.visaforkorea-hc.com', 'visaforkorea-vt.com', 'visaforkorea-hc.com', 'sgn.visaforkorea-hc.com']}});
+                </script>
+            </div>
+        </div>
+        <!-- //Wrap -->
+</body>
+</html>
+

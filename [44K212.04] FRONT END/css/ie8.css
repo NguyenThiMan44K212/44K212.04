@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/* <UPLEAT> UI Dev Team KKY 1801224 */
+
+/* =Header */
+.header.-active {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* =Quick */
+.quick {
+    width: 1022px;
+}
+.quick__item {
+    width: 170px;
+}
+.quick__link {
+    background-color: #fafafa;
+    border-bottom: 4px solid #eee;
+}
+
+.gnb__folder-name:after {
+    left: 0;
+}
+
